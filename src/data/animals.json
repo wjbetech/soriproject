@@ -1,0 +1,27 @@
+[
+  {
+    "term": "개굴개굴",
+    "animal": "frog",
+    "description": "frog croak"
+  },
+  {
+    "term": "개꿀개꿀",
+    "animal": "frog",
+    "description": "variant/fun frog sound (colloquial)"
+  },
+  {
+    "term": "멍멍",
+    "animal": "dog",
+    "description": "dog bark"
+  },
+  {
+    "term": "짹짹",
+    "animal": "bird",
+    "description": "bird chirp"
+  },
+  {
+    "term": "꿀꿀",
+    "animal": "pig",
+    "description": "pig oink"
+  }
+]

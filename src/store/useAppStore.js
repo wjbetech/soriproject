@@ -1,58 +1,63 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import general from "../data/general.json";
+import animals from "../data/animals.json";
+import manhwa from "../data/manhwa.json";
 
-const maxRecentSearches = 10;
+const MAX_RECENT_SEARCHES = 10;
+
+const wordsByCategoryInitial = {
+  General: general.map((e) => e.term),
+  Animals: animals.map((e) => e.term),
+  Manhwa: manhwa.map((e) => e.term)
+};
+
+const allWordsInitial = Object.values(wordsByCategoryInitial).flat();
 
 const useAppStore = create(
   persist(
     (set, get) => ({
-      // state items
-      searchItem: "",
+      // state
+      searchTerm: "",
       category: "General",
-      words: [],
-      recentSearches: [],
+      wordsByCategory: wordsByCategoryInitial,
+      words: allWordsInitial,
+      recent: [],
       theme: "light",
 
       // actions
-      setSearch: (item) => {
-        set({ searchItem: item });
+      setSearch: (term) => {
+        set({ searchTerm: term });
 
-        if (item && !get().recentSearches.includes(item)) {
+        if (term && !get().recent.includes(term)) {
           set((state) => ({
-            recentSearches: [item, ...state.recentSearches].slice(0, maxRecentSearches)
+            recent: [term, ...state.recent].slice(0, MAX_RECENT_SEARCHES)
           }));
         }
       },
 
-      addRecent: (item) =>
+      addRecent: (term) =>
         set((state) => ({
-          recentSearches: [item, ...state.recentSearches].slice(0, maxRecentSearches)
+          recent: [term, ...state.recent.filter((t) => t !== term)].slice(0, MAX_RECENT_SEARCHES)
         })),
 
-      removeRecent: (item) =>
-        set((state) => ({
-          recentSearches: state.recentSearches.filter((search) => search !== item)
-        })),
+      removeRecent: (term) => set((state) => ({ recent: state.recent.filter((t) => t !== term) })),
 
-      clearRecent: () => set({ recentSearches: [] }),
+      clearRecent: () => set({ recent: [] }),
 
-      clearSearch: () => set({ searchItem: "" }),
+      clearSearch: () => set({ searchTerm: "" }),
 
       setCategory: (category) => set({ category }),
 
       setWords: (words) => set({ words }),
 
-      toggleTheme: () =>
-        set((state) => ({
-          theme: state.theme === "light" ? "dark" : "light"
-        }))
+      setWordsByCategory: (map) => set({ wordsByCategory: map }),
+
+      toggleTheme: () => set((state) => ({ theme: state.theme === "light" ? "dark" : "light" }))
     }),
     {
       name: "hansori-storage",
-      partialize: (state) => ({
-        recentSearches: state.recentSearches,
-        theme: state.theme
-      })
+      partialize: (state) => ({ recent: state.recent, theme: state.theme })
     }
   )
 );
