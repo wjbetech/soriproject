@@ -3,9 +3,12 @@ import general from "../data/general.json";
 import animals from "../data/animals.json";
 import manhwa from "../data/manhwa.json";
 import useAppStore from "../store/useAppStore";
+import useSearch from "../hooks/useSearch";
 
 export default function Table() {
   const category = useAppStore((s) => s.category);
+
+  const { results: filteredResults, filterActive } = useSearch();
 
   const items = useMemo(() => {
     if (!category || category === "All") {
@@ -22,6 +25,23 @@ export default function Table() {
 
     return [];
   }, [category]);
+
+  // If search term meets the filtering threshold in useSearch, show filtered results for current category
+  const displayed = useMemo(() => {
+    if (filterActive) {
+      // Map terms back to full item objects for display (may return empty array if no matches)
+      const mapAll = [
+        ...general.map((i) => ({ ...i, category: "General" })),
+        ...animals.map((i) => ({ ...i, category: "Animals" })),
+        ...manhwa.map((i) => ({ ...i, category: "Manhwa" }))
+      ];
+      const byTerm = new Map(mapAll.map((it) => [it.term, it]));
+      return filteredResults.map((term) => byTerm.get(term)).filter(Boolean);
+    }
+
+    // filter not active -> show baseline items
+    return items;
+  }, [filterActive, filteredResults, items]);
 
   const columnCount = category === "Animals" ? 3 : 2;
   const colWidth = `${100 / columnCount}%`;
@@ -46,7 +66,7 @@ export default function Table() {
           </tr>
         </thead>
         <tbody>
-          {items.map((it, idx) => (
+          {displayed.map((it, idx) => (
             <tr key={`${it.term}-${idx}`} className="border-b last:border-b-0">
               <td style={{ width: colWidth }} className="px-4 py-3 align-middle wrap-break-word">
                 {it.term}

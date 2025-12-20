@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import useAppStore from "../store/useAppStore";
+import SearchBar from "./SearchBar";
 
 export default function Navbar() {
   const theme = useAppStore((s) => s.theme);
@@ -28,7 +29,7 @@ export default function Navbar() {
             className="toggle theme-controller"
           />
         </div>
-        <input type="text" placeholder="Search..." className="input" />
+        <SearchBar />
       </div>
     </div>
   );
