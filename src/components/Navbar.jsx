@@ -1,15 +1,30 @@
-import React from "react";
-
-const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
+import React, { useEffect } from "react";
+import useAppStore from "../store/useAppStore";
 
 export default function Navbar() {
+  const theme = useAppStore((s) => s.theme);
+  const toggleTheme = useAppStore((s) => s.toggleTheme);
+
+  // Apply theme to document root when it changes
+  useEffect(() => {
+    if (typeof document !== "undefined" && document.documentElement) {
+      document.documentElement.setAttribute("data-theme", theme || "light");
+    }
+  }, [theme]);
+
   return (
     <div className="p-6 flex justify-between w-full border-b border-base-300">
       <h2 className="font-semibold text-2xl">HanSori</h2>
       <div className="flex flex-row gap-4 items-center">
-        <div className="flex flex-row gap-2">
-          <label className="text-sm">{currentTheme === "light" ? "Dark" : "Light"}</label>
-          <input type="checkbox" value="synthwave" className="toggle theme-controller" />
+        <div className="flex flex-row gap-2 items-center">
+          <label className="text-sm">{theme === "light" ? "Light" : "Dark"}</label>
+          <input
+            aria-label="Toggle theme"
+            type="checkbox"
+            checked={theme === "dark"}
+            onChange={toggleTheme}
+            className="toggle theme-controller"
+          />
         </div>
         <input type="text" placeholder="Search..." className="input" />
       </div>
