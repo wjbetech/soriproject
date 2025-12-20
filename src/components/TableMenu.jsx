@@ -1,17 +1,12 @@
 import React from "react";
+import TableCategoryTag from "./TableCategoryTag";
 
 export default function TableMenu() {
   return (
     <div role="tablist" className="tabs tabs-box w-full">
-      <a role="tab" className="tab w-1/3">
-        General
-      </a>
-      <a role="tab" className="tab w-1/3">
-        Animals
-      </a>
-      <a role="tab" className="tab w-1/3">
-        Manhwa
-      </a>
+      <TableCategoryTag name="General" />
+      <TableCategoryTag name="Animals" />
+      <TableCategoryTag name="Manhwa" />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { persist } from "zustand/middleware";
 
 const maxRecentSearches = 10;
 
-export const useAppStore = create(
+const useAppStore = create(
   persist(
     (set, get) => ({
       // state items
@@ -56,3 +56,5 @@ export const useAppStore = create(
     }
   )
 );
+
+export default useAppStore;
