@@ -1,14 +1,22 @@
 [
   {
     "term": "보글보글",
-    "description": "bubbling/boiling (sound of water or soup)"
+    "description": "Bubbling/boiling (sound of water or soup)"
   },
   {
     "term": "살랑살랑",
-    "description": "light fluttering (breeze, fabric)"
+    "description": "Light fluttering (breeze, fabric)"
   },
   {
     "term": "데굴데굴",
-    "description": "rolling or tumbling repeatedly"
+    "description": "Rolling or tumbling repeatedly"
+  },
+  {
+    "term": "쨍그랑",
+    "description": "Clinking or clanging sound (glass or metal)"
+  },
+  {
+    "term": "우르르",
+    "description": "Thunderous rumble or crash"
   }
 ]

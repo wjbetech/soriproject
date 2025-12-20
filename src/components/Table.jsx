@@ -28,7 +28,7 @@ export default function Table() {
 
   return (
     <div className="overflow-x-auto mt-4 border border-base-300 rounded-md">
-      <table className="table table-fixed w-full border-collapse">
+      <table className="table table-fixed w-full border-collapse text-base">
         <thead className="bg-base-200">
           <tr>
             <th style={{ width: colWidth }} className="text-left px-4 py-3">
@@ -57,7 +57,7 @@ export default function Table() {
                   {it.animal || "—"}
                 </td>
               )}
-              <td style={{ width: colWidth }} className="px-4 py-3 align-middle text-sm text-gray-700 wrap-break-word">
+              <td style={{ width: colWidth }} className="px-4 py-3 align-middle text-base-content wrap-break-word">
                 {it.description}
               </td>
             </tr>
