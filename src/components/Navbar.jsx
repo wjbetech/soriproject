@@ -8,7 +8,9 @@ export default function Navbar() {
   // Apply theme to document root when it changes
   useEffect(() => {
     if (typeof document !== "undefined" && document.documentElement) {
-      document.documentElement.setAttribute("data-theme", theme || "light");
+      // Map app-level theme to a daisyUI theme name
+      const mapped = theme === "dark" ? "synthwave" : "fantasy";
+      document.documentElement.setAttribute("data-theme", mapped);
     }
   }, [theme]);
 

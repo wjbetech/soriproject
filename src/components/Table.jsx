@@ -27,9 +27,9 @@ export default function Table() {
   const colWidth = `${100 / columnCount}%`;
 
   return (
-    <div className="overflow-x-auto mt-4 border border-gray-200 rounded-md">
-      <table className="table-fixed w-full border-collapse bg-white">
-        <thead className="bg-gray-100">
+    <div className="overflow-x-auto mt-4 border border-base-300 rounded-md">
+      <table className="table table-fixed w-full border-collapse">
+        <thead className="bg-base-200">
           <tr>
             <th style={{ width: colWidth }} className="text-left px-4 py-3">
               Term
