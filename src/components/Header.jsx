@@ -8,7 +8,10 @@ export default function Header() {
         used by the Korean language.
       </p>
       <p className="text-base-content/60">
-        If you like this project, please consider supporting me <a href="#">here.</a>
+        If you like this project, please consider supporting me{" "}
+        <a href="#" className="cursor-not-allowed">
+          here.
+        </a>
       </p>
     </div>
   );
