@@ -77,7 +77,7 @@ export default function SearchBar() {
                   <div className="flex items-center justify-between">
                     <div className="font-medium">{s.term}</div>
                     {s.category && s.category !== undefined && (
-                      <span className="text-xs badge badge-outline">{s.category}</span>
+                      <span className="text-xs text-gray-500">{s.category}</span>
                     )}
                   </div>
                   {s.description && <div className="text-xs text-gray-500">{s.description}</div>}

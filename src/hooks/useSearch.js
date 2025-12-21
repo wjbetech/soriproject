@@ -4,9 +4,9 @@ import generalData from "../data/general.json";
 import animalsData from "../data/animals.json";
 import manhwaData from "../data/manhwa.json";
 
-const MIN_FILTER_CHARS = 1; // threshold for filtering the currently displayed table (allow single-char filter)
-const MIN_SUGGEST_CHARS = 1; // threshold for showing suggestion results (skeleton until 1 char)
-const MAX_SUGGESTIONS = 8;
+const minFilterChars = 1; // threshold for filtering the currently displayed table (allow single-char filter)
+const minSuggestChars = 1; // threshold for showing suggestion results (skeleton until 1 char)
+const maxSuggestions = 8;
 
 // Normalize strings for better fuzzy matching. Use NFD so Hangul syllables decompose into jamo
 // making partial inputs like '살라' match '살랑살랑'. Also strip whitespace and lowercase.
@@ -28,19 +28,8 @@ function isSubsequence(needle, haystack) {
   return needle.length === 0;
 }
 
-function scoreMatch(term, q) {
-  const t = normalizeForSearch(term);
-  const s = normalizeForSearch(q);
-  if (t === s) return 0;
-  if (t.startsWith(s)) return 1;
-  if (t.includes(s)) return 2;
-  if (isSubsequence(s, t)) return 3;
-  // fallback: small edit distance check
-  // simple levenshtein-ish distance can be approximated by length difference for short terms
-  const lenDiff = Math.abs(t.length - s.length);
-  if (lenDiff <= 1) return 4;
-  return 5;
-}
+// (removed unused scoreMatch helper) - scoring is done by scoreMatchFields which considers
+// term, keywords, animal, and description with per-field weighting.
 
 function editDistance(a, b) {
   const m = a.length;
@@ -78,20 +67,35 @@ export default function useSearch() {
   const searchTerm = useAppStore((s) => s.searchTerm);
   const setSearch = useAppStore((s) => s.setSearch);
   const category = useAppStore((s) => s.category);
-  const wordsByCategory = useAppStore((s) => s.wordsByCategory);
   const addRecent = useAppStore((s) => s.addRecent);
   const recent = useAppStore((s) => s.recent);
   const setCategory = useAppStore((s) => s.setCategory);
 
-  // results used for filtering the currently displayed table (only after MIN_FILTER_CHARS)
+  // results used for filtering the currently displayed table (only after minFilterChars)
   const results = useMemo(() => {
-    if (!searchTerm || searchTerm.length < MIN_FILTER_CHARS) return [];
-    const list = (wordsByCategory && wordsByCategory[category]) || [];
-    return list.filter((w) => fuzzyIncludes(w, searchTerm));
-  }, [searchTerm, category, wordsByCategory]);
+    if (!searchTerm || searchTerm.length < minFilterChars) return [];
+    // build list of items for the selected category
+    const itemsByCategory = {
+      General: generalData,
+      Animals: animalsData,
+      Manhwa: manhwaData
+    };
+    const list = itemsByCategory[category] || [];
+
+    const matchesItem = (item, q) => {
+      if (!item) return false;
+      if (fuzzyIncludes(item.term, q)) return true;
+      if (item.keywords && item.keywords.some((k) => fuzzyIncludes(k, q))) return true;
+      if (item.animal && fuzzyIncludes(item.animal, q)) return true;
+      if (item.description && fuzzyIncludes(item.description, q)) return true;
+      return false;
+    };
+
+    return list.filter((it) => matchesItem(it, searchTerm)).map((it) => it.term);
+  }, [searchTerm, category]);
 
   // whether table filtering is currently active (search term meets threshold)
-  const filterActive = Boolean(searchTerm && searchTerm.length >= MIN_FILTER_CHARS);
+  const filterActive = Boolean(searchTerm && searchTerm.length >= minFilterChars);
 
   // build a combined dataset with metadata for suggestions
   const combined = useMemo(() => {
@@ -102,23 +106,45 @@ export default function useSearch() {
     ];
   }, []);
 
+  function buildIndex(items) {
+    return items.map((item) => ({
+      ...item,
+      _norm: normalizeForSearch([item.term, item.description, item.animal || "", ...(item.keywords || [])].join(" "))
+    }));
+  }
+
+  function scoreMatchFields(item, q) {
+    const qn = normalizeForSearch(q);
+    // higher weight if matches term exactly / startsWith
+    if (normalizeForSearch(item.term).startsWith(qn)) return 100;
+    // keywords match
+    for (const k of item.keywords || []) {
+      if (normalizeForSearch(k).includes(qn)) return 80;
+    }
+    // animal / description / subsequence / fuzzy fallback
+    if (item.animal && fuzzyIncludes(item.animal, q)) return 60;
+    if (fuzzyIncludes(item.description, q)) return 50;
+    if (fuzzyIncludes(item._norm, qn)) return 30;
+    return 0;
+  }
+
   const suggestions = useMemo(() => {
-    if (!searchTerm || searchTerm.length < MIN_SUGGEST_CHARS) return [];
-    const q = searchTerm.toLowerCase();
-    const scored = combined
-      .map((item) => ({ item, score: scoreMatch(item.term, q) }))
-      .filter(({ score }) => score < 4)
+    if (!searchTerm || searchTerm.length < minSuggestChars) return [];
+    const idx = buildIndex(combined);
+    // Only include reasonably relevant matches (score threshold) to avoid noisy results
+    const scored = idx
+      .map((item) => ({ item, score: scoreMatchFields(item, searchTerm) }))
+      .filter(({ score }) => score >= 50)
       .sort((a, b) => {
-        if (a.score !== b.score) return a.score - b.score;
-        // tie-breaker: shorter terms first
-        return a.item.term.length - b.item.term.length;
+        if (b.score !== a.score) return b.score - a.score; // higher score first
+        return a.item.term.length - b.item.term.length; // shorter terms first
       })
-      .slice(0, MAX_SUGGESTIONS)
+      .slice(0, maxSuggestions)
       .map(({ item }) => item);
     return scored;
   }, [searchTerm, combined]);
 
-  const showSkeleton = !searchTerm || searchTerm.length < MIN_SUGGEST_CHARS;
+  const showSkeleton = !searchTerm || searchTerm.length < minSuggestChars;
 
   const submit = (term) => {
     setSearch(term);
