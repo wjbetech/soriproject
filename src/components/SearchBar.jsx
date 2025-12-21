@@ -35,6 +35,23 @@ export default function SearchBar() {
     };
   }, [open, showSkeleton]);
 
+  // Keep dropdown open while typing (deferred to avoid sync state change warnings)
+  useEffect(() => {
+    const t = setTimeout(() => {
+      if (searchTerm && searchTerm.length > 0) setOpen(true);
+    }, 0);
+    return () => clearTimeout(t);
+  }, [searchTerm]);
+
+  // If suggestions appear, immediately hide the skeleton
+  useEffect(() => {
+    if (suggestions && suggestions.length > 0) {
+      const t = setTimeout(() => setSkeletonVisible(false), 0);
+      return () => clearTimeout(t);
+    }
+    return undefined;
+  }, [suggestions]);
+
   return (
     <div className="relative" ref={wrapperRef}>
       <input

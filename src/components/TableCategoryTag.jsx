@@ -1,7 +1,7 @@
 import React from "react";
 import useAppStore from "../store/useAppStore";
 
-export default function TableCategoryTag({ name }) {
+export default function TableCategoryTag({ name, label }) {
   const category = useAppStore((state) => state.category);
   const setCategory = useAppStore((state) => state.setCategory);
 
@@ -13,7 +13,7 @@ export default function TableCategoryTag({ name }) {
         category === name ? "tab-active" : ""
       }`}
       onClick={() => setCategory(name)}>
-      {name}
+      {label ?? name}
     </button>
   );
 }
