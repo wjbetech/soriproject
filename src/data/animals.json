@@ -2,25 +2,67 @@
   {
     "term": "개굴개굴 ㆍ 개꿀개꿀",
     "keywords": ["croak", "frog", "ribbit"],
-    "animal": "frog",
+    "animal": "Frog",
     "description": "A frog croaking"
   },
   {
     "term": "멍멍",
     "keywords": ["bark", "dog", "woof"],
-    "animal": "dog",
+    "animal": "Dog",
     "description": "A dog bark"
   },
   {
     "term": "짹짹",
     "keywords": ["chirp", "bird", "tweet"],
-    "animal": "bird",
+    "animal": "Bird",
     "description": "The sound of a bird chirping"
   },
   {
     "term": "꿀꿀",
     "keywords": ["oink", "pig", "snort"],
-    "animal": "pig",
+    "animal": "Pig",
     "description": "An oink"
+  },
+  {
+    "term": "야옹야옹",
+    "keywords": ["meow", "cat", "purr"],
+    "animal": "Cat",
+    "description": "A cat meowing"
+  },
+  {
+    "term": "꼬끼오",
+    "keywords": ["cock-a-doodle-doo", "rooster"],
+    "animal": "Rooster",
+    "description": "A rooster crowing"
+  },
+  {
+    "term": "음메",
+    "keywords": ["moo", "cow"],
+    "animal": "Cow",
+    "description": "A cow mooing"
+  },
+  {
+    "term": "부엉부엉",
+    "keywords": ["hoot", "owl"],
+    "animal": "Owl",
+    "description": "An owl hooting"
+  },
+  {
+    "term": "구구",
+    "keywords": ["coo", "pigeon", "dove"],
+    "animal": "Pigeon",
+    "description": "A pigeon cooing"
+  },
+  {
+    "term": "찍찍",
+    "keywords": ["squeak", "mouse", "rat"],
+    "animal": "Mouse",
+    "description": "A mouse squeaking"
+  },
+  {
+    "term": "까악까악",
+    "keywords": ["caw", "crow", "raven"],
+    "animal": "Crow",
+    "description": "A crow cawing"
   }
 ]
