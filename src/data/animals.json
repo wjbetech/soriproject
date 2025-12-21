@@ -64,5 +64,77 @@
     "keywords": ["caw", "crow", "raven"],
     "animal": "Crow",
     "description": "A crow cawing"
+  },
+  {
+    "term": "끼륵끼륵",
+    "keywords": ["squawk", "parrot", "Seagull", "bird"],
+    "animal": "Parrot, Seagull",
+    "description": "A bird squawking"
+  },
+  {
+    "term": "꽥꽥",
+    "keywords": ["quack", "duck", "goose"],
+    "animal": "Duck, Goose",
+    "description": "A duck or goose quacking"
+  },
+  {
+    "term": "으르렁",
+    "keywords": ["growl", "snarl", "bear", "wolf"],
+    "animal": "Bear, Wolf",
+    "description": "A general growling sound made by animals"
+  },
+  {
+    "term": "짖짖",
+    "keywords": ["bark", "small dog", "yip"],
+    "animal": "Small Dog",
+    "description": "A high-pitched bark typical of small dogs"
+  },
+  {
+    "term": "삐약삐약",
+    "keywords": ["cheep", "chick", "peep"],
+    "animal": "Chick",
+    "description": "The sound of a baby chick cheeping"
+  },
+  {
+    "term": "매애",
+    "keywords": ["bleat", "giraffe", "goat", "sheep"],
+    "animal": "Generic Animal",
+    "description": "A generic term for animal sounds or cries"
+  },
+  {
+    "term": "히힝",
+    "keywords": ["neigh", "horse", "donkey", "whinny"],
+    "animal": "Horse, Donkey",
+    "description": "A horse or donkey neighing"
+  },
+  {
+    "term": "윙",
+    "keywords": ["buzz", "bee", "insect", "mosquito"],
+    "animal": "Insect",
+    "description": "The buzzing sound made by bees or insects"
+  },
+  {
+    "term": "쉿쉿",
+    "keywords": ["hiss", "snake", "cat"],
+    "animal": "Snake, Cat",
+    "description": "The sound of hissing made by snakes or cats"
+  },
+  {
+    "term": "뻐국",
+    "keywords": ["cuckoo", "bird"],
+    "animal": "Cuckoo",
+    "description": "The sound of a cuckoo bird"
+  },
+  {
+    "term": "캥캥",
+    "keywords": ["kangaroo", "fox", "chortle"],
+    "animal": "Kangaroo, Fox",
+    "description": "The sound of a kangaroo or fox chortling"
+  },
+  {
+    "term": "끽끽",
+    "keywords": ["monkey"],
+    "animal": "Monkey",
+    "description": "The sound of a playful monkey"
   }
 ]
