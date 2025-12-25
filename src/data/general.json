@@ -23,5 +23,15 @@
     "term": "우르르",
     "keywords": ["thunder", "rumble", "crash"],
     "description": "Thunderous rumble or crash"
+  },
+  {
+    "term": "반짝반짝",
+    "keywords": ["twinkling", "sparkling", "shining"],
+    "description": "Twinkling or sparkling light"
+  },
+  {
+    "term": "꾸르륵",
+    "keywords": ["growling", "stomach", "rumble"],
+    "description": "Stomach growling or rumbling"
   }
 ]

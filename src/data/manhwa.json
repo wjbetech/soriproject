@@ -18,5 +18,50 @@
     "term": "타닥",
     "keywords": ["crackling", "crackle", "sharp"],
     "description": "Light crackling or small sharp sound"
+  },
+  {
+    "term": "까꿍",
+    "keywords": ["peekaboo", "surprise"],
+    "description": "Peekaboo sound (used in games or surprises)"
+  },
+  {
+    "term": "꿀꺽",
+    "keywords": ["gulp", "swallow"],
+    "description": "A gulping or swallowing sound"
+  },
+  {
+    "term": "끼익",
+    "keywords": ["door", "creak"],
+    "description": "A door creak (classic comic creak)"
+  },
+  {
+    "term": "톡",
+    "keywords": ["tap", "hit", "bonk"],
+    "description": "A light tap, hit, or bonk sound"
+  },
+  {
+    "term": "퍽",
+    "keywords": ["thump", "punch", "hit"],
+    "description": "A thump or punch sound"
+  },
+  {
+    "term": "띠리리",
+    "keywords": ["ringing", "phone", "bell"],
+    "description": "A ringing sound (like a phone or bell)"
+  },
+  {
+    "term": "쌩",
+    "keywords": ["zoom", "speed", "fast"],
+    "description": "A zooming or fast movement sound"
+  },
+  {
+    "term": "얼쿡",
+    "keywords": ["stare", "gaze", "look"],
+    "description": "A staring or intense gaze sound"
+  },
+  {
+    "term": "뜨금",
+    "keywords": ["shock", "flinch", "panic"],
+    "description": "A sound representing sudden realization or remembering something"
   }
 ]
