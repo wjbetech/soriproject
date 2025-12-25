@@ -63,5 +63,10 @@
     "term": "뜨금",
     "keywords": ["shock", "flinch", "panic"],
     "description": "A sound representing sudden realization or remembering something"
+  },
+  {
+    "term": "짝",
+    "keywords": ["clap", "snap"],
+    "description": "Clapping or snapping sound"
   }
 ]

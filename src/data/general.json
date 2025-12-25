@@ -1,22 +1,22 @@
 [
   {
     "term": "보글보글",
-    "keywords": ["bubbling", "boiling", "bubbles"],
+    "keywords": ["bubble", "boil", "bubbles"],
     "description": "Bubbling/boiling (sound of water or soup)"
   },
   {
     "term": "살랑살랑",
-    "keywords": ["fluttering", "breeze", "fabric"],
+    "keywords": ["flutters", "breeze", "fabric"],
     "description": "Light fluttering (breeze, fabric)"
   },
   {
     "term": "데굴데굴",
-    "keywords": ["rolling", "tumbling", "repeatedly"],
+    "keywords": ["roll", "tumble", "repeat"],
     "description": "Rolling or tumbling repeatedly"
   },
   {
     "term": "쨍그랑",
-    "keywords": ["clinking", "clanging", "glass", "metal"],
+    "keywords": ["clink", "clang"],
     "description": "Clinking or clanging sound (glass or metal)"
   },
   {
@@ -26,12 +26,202 @@
   },
   {
     "term": "반짝반짝",
-    "keywords": ["twinkling", "sparkling", "shining"],
+    "keywords": ["twinkle", "sparkle", "shine"],
     "description": "Twinkling or sparkling light"
   },
   {
     "term": "꾸르륵",
-    "keywords": ["growling", "stomach", "rumble"],
+    "keywords": ["growl", "stomach", "rumble"],
     "description": "Stomach growling or rumbling"
+  },
+  {
+    "term": "끙끙",
+    "keywords": ["groan", "struggle", "effort"],
+    "description": "Groaning or struggling sound (effort)"
+  },
+  {
+    "term": "덜컬덜컹",
+    "keywords": ["rattle", "bump"],
+    "description": "Rattling or bumpy movement sound"
+  },
+  {
+    "term": "둥둥",
+    "keywords": ["bang", "drum"],
+    "description": "The sound of banging a drum or knocking on a door"
+  },
+  {
+    "term": "드르렁",
+    "keywords": ["snore", "sleep"],
+    "description": "Snoring sound while sleeping"
+  },
+  {
+    "term": "딩굴딩굴",
+    "keywords": ["roll", "tumble"],
+    "description": "Rolling or tumbling sound"
+  },
+  {
+    "term": "따르릉",
+    "keywords": ["ring", "phone", "bell"],
+    "description": "Ringing sound (phone or bell)"
+  },
+  {
+    "term": "팔랑팔랑",
+    "keywords": ["flutter", "flap"],
+    "description": "Fluttering or flapping sound"
+  },
+  {
+    "term": "딸꾹딸꾹",
+    "keywords": ["hiccup"],
+    "description": "Hiccup sound"
+  },
+  {
+    "term": "똑딱똑딱",
+    "keywords": ["tick", "tock", "clock"],
+    "description": "Ticking sound of a clock"
+  },
+  {
+    "term": "부릉부릉",
+    "keywords": ["engine", "car"],
+    "description": "Engine revving sound (car or motorcycle)"
+  },
+  {
+    "term": "빵빵",
+    "keywords": ["honk", "horn"],
+    "description": "Honk of a car horn"
+  },
+  {
+    "term": "칙칙폭폭",
+    "keywords": ["choo-choo", "train"],
+    "description": "Choo-choo sound of a train"
+  },
+  {
+    "term": "싹뚝싹뚝",
+    "keywords": ["snip", "cut"],
+    "description": "Snipping or cutting sound (scissors)"
+  },
+  {
+    "term": "쑥덕쑥덕",
+    "keywords": ["whisper", "gossip"],
+    "description": "Whispering or gossiping sound"
+  },
+  {
+    "term": "아장아장",
+    "keywords": ["toddle", "walk"],
+    "description": "Toddling or walking sound (baby)"
+  },
+  {
+    "term": "어기여차",
+    "keywords": ["heave-ho", "effort"],
+    "description": "Heave-ho or the sound of heavy effort, e.g. weightlifting"
+  },
+  {
+    "term": "에취",
+    "keywords": ["sneeze"],
+    "description": "Sneeze sound"
+  },
+  {
+    "term": "으쓱으쓱",
+    "keywords": ["shrug", "gesture"],
+    "description": "Shrugging or gesturing sound"
+  },
+  {
+    "term": "재잘재잘",
+    "keywords": ["chatter", "babble"],
+    "description": "Chattering or babbling sound"
+  },
+  {
+    "term": "쟁강쟁강",
+    "keywords": ["metal", "clang"],
+    "description": "The sound of metal clanging against metal"
+  },
+  {
+    "term": "조잘조잘",
+    "keywords": ["murmur", "talk"],
+    "description": "Murmuring or talking sound"
+  },
+  {
+    "term": "지글지글",
+    "keywords": ["sizzle", "fry"],
+    "description": "Sizzling sound (frying food)"
+  },
+  {
+    "term": "땡땡",
+    "keywords": ["ding-dong", "bell"],
+    "description": "Ding-dong sound of a bell"
+  },
+  {
+    "term": "찔끔찔끔",
+    "keywords": ["drip", "leak"],
+    "description": "Dripping or leaking sound"
+  },
+  {
+    "term": "와삭와삭",
+    "keywords": ["crunch", "munch"],
+    "description": "Crunching or munching sound"
+  },
+  {
+    "term": "찰칵",
+    "keywords": ["click", "camera"],
+    "description": "Click sound of a camera shutter"
+  },
+  {
+    "term": "철철",
+    "keywords": ["pour", "flow"],
+    "description": "Pouring or flowing sound (liquid)"
+  },
+  {
+    "term": "콜록콜록",
+    "keywords": ["cough"],
+    "description": "Coughing sound"
+  },
+  {
+    "term": "콩닥콩닥",
+    "keywords": ["heartbeat", "nervous"],
+    "description": "Heartbeat sound (nervous or excited)"
+  },
+  {
+    "term": "콸콸",
+    "keywords": ["gush", "flow"],
+    "description": "Gushing or flowing sound (liquid)"
+  },
+  {
+    "term": "쿨쿨",
+    "keywords": ["snore", "sleep"],
+    "description": "Soft snoring sound while sleeping"
+  },
+  {
+    "term": "통통",
+    "keywords": ["thump", "bounce"],
+    "description": "Thumping or bouncing sound"
+  },
+  {
+    "term": "퍼덕퍼덕",
+    "keywords": ["flap", "flutter"],
+    "description": "Flapping or fluttering sound (wings)"
+  },
+  {
+    "term": "찰싹찰싹",
+    "keywords": ["splash", "slap"],
+    "description": "Splashing or slapping sound"
+  },
+  {
+    "term": "펑",
+    "keywords": ["pop", "bang"],
+    "description": "Popping or banging sound"
+  },
+  {
+    "term": "피융",
+    "keywords": ["whoosh", "zoom", "whizz"],
+    "description": "A whizz or zooming sound"
+  },
+  {
+    "term": "후루룩",
+    "keywords": ["slurp", "sip"],
+    "description": "Slurping or sipping sound"
+  },
+  {
+    "term": "휙",
+    "keywords": ["whoosh", "fast", "swift"],
+    "description": "A fast, whooshing type movement"
   }
 ]
