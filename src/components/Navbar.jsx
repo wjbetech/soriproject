@@ -16,7 +16,7 @@ export default function Navbar() {
   }, [theme]);
 
   return (
-    <div className="p-6 flex justify-between w-full border-b border-base-300 bg-base-300">
+    <div className="p-6 flex justify-between w-full border-b border-base-300 bg-base-300 items-center">
       <h2 className="font-semibold text-2xl">MongMong</h2>
       <div className="flex flex-row gap-4 items-center">
         <div className="flex flex-row gap-2 items-center">
