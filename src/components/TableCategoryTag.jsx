@@ -9,7 +9,7 @@ export default function TableCategoryTag({ name, label }) {
     <button
       type="button"
       role="tab"
-      className={`tab w-1/3 h-12 flex items-center justify-center text-center leading-none ${
+      className={`tab w-1/3 h-12 font-bold text-lg flex items-center justify-center text-center leading-none ${
         category === name ? "tab-active" : ""
       }`}
       onClick={() => setCategory(name)}>

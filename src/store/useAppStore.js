@@ -4,7 +4,10 @@ import general from "../data/general.json";
 import animals from "../data/animals.json";
 import manhwa from "../data/manhwa.json";
 
-const MAX_RECENT_SEARCHES = 10;
+const maxRecentSearches = 10;
+const searchTermKey = "mongmong:searchTerm";
+const categoryKey = "mongmong:category";
+const themeKey = "mongmong:theme";
 
 const wordsByCategoryInitial = {
   General: general.map((e) => e.term),
@@ -14,31 +17,33 @@ const wordsByCategoryInitial = {
 
 const allWordsInitial = Object.values(wordsByCategoryInitial).flat();
 
+const initialSearch = typeof window !== "undefined" ? localStorage.getItem(searchTermKey) || "" : "";
+
+const initialCategory = typeof window !== "undefined" ? localStorage.getItem(categoryKey) || "All" : "All";
+
 const useAppStore = create(
   persist(
     (set, get) => ({
       // state
-      searchTerm: "",
-      category: "General",
+      searchTerm: initialSearch,
+      category: initialCategory,
       wordsByCategory: wordsByCategoryInitial,
       words: allWordsInitial,
       recent: [],
-      theme: "light",
+      theme: typeof window !== "undefined" ? localStorage.getItem(themeKey) || "light" : "light",
 
       // actions
       setSearch: (term) => {
-        set({ searchTerm: term });
-
-        if (term && !get().recent.includes(term)) {
-          set((state) => ({
-            recent: [term, ...state.recent].slice(0, MAX_RECENT_SEARCHES)
-          }));
+        if (typeof window !== "undefined") {
+          if (term && term.length) localStorage.setItem(searchTermKey, term);
+          else localStorage.removeItem(searchTermKey);
         }
+        set({ searchTerm: term });
       },
 
       addRecent: (term) =>
         set((state) => ({
-          recent: [term, ...state.recent.filter((t) => t !== term)].slice(0, MAX_RECENT_SEARCHES)
+          recent: [term, ...state.recent.filter((t) => t !== term)].slice(0, maxRecentSearches)
         })),
 
       removeRecent: (term) => set((state) => ({ recent: state.recent.filter((t) => t !== term) })),
@@ -47,16 +52,26 @@ const useAppStore = create(
 
       clearSearch: () => set({ searchTerm: "" }),
 
-      setCategory: (category) => set({ category }),
+      setCategory: (category) => {
+        if (typeof window !== "undefined") {
+          if (category) localStorage.setItem(categoryKey, category);
+          else localStorage.removeItem(categoryKey);
+        }
+        set({ category });
+      },
 
       setWords: (words) => set({ words }),
 
       setWordsByCategory: (map) => set({ wordsByCategory: map }),
 
-      toggleTheme: () => set((state) => ({ theme: state.theme === "light" ? "dark" : "light" }))
+      toggleTheme: () => {
+        const newTheme = get().theme === "light" ? "dark" : "light";
+        if (typeof window !== "undefined") localStorage.setItem(themeKey, newTheme);
+        set({ theme: newTheme });
+      }
     }),
     {
-      name: "hansori-storage",
+      name: "mongmong-storage",
       partialize: (state) => ({ recent: state.recent, theme: state.theme })
     }
   )

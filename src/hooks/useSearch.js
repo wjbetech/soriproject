@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import useAppStore from "../store/useAppStore";
 import generalData from "../data/general.json";
 import animalsData from "../data/animals.json";
@@ -7,6 +7,9 @@ import manhwaData from "../data/manhwa.json";
 const minFilterChars = 1; // threshold for filtering the currently displayed table (allow single-char filter)
 const minSuggestChars = 1; // threshold for showing suggestion results (skeleton until 1 char)
 const maxSuggestions = 8;
+
+const searchTermKey = "mongmong:searchTerm";
+const lastCategoryKey = "mongmong:lastCategory";
 
 // Normalize strings for better fuzzy matching. Use NFD so Hangul syllables decompose into jamo
 // making partial inputs like '살라' match '살랑살랑'. Also strip whitespace and lowercase.
@@ -70,6 +73,31 @@ export default function useSearch() {
   const addRecent = useAppStore((s) => s.addRecent);
   const recent = useAppStore((s) => s.recent);
   const setCategory = useAppStore((s) => s.setCategory);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const saved = localStorage.getItem(searchTermKey);
+    const savedCategory = localStorage.getItem(lastCategoryKey);
+
+    if (saved && (!searchTerm || searchTerm.length === 0)) {
+      setSearch(saved);
+    }
+
+    if (savedCategory && (!category || category === "All")) {
+      setCategory(savedCategory);
+    }
+  }, [category, searchTerm, setCategory, setSearch]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    if (searchTerm && searchTerm.length > 0) {
+      localStorage.setItem(searchTermKey, searchTerm);
+    } else {
+      localStorage.removeItem(searchTermKey);
+    }
+  }, [searchTerm]);
 
   // results used for filtering the currently displayed table (only after minFilterChars)
   const results = useMemo(() => {
@@ -146,16 +174,29 @@ export default function useSearch() {
 
   const showSkeleton = !searchTerm || searchTerm.length < minSuggestChars;
 
-  const submit = (term) => {
-    setSearch(term);
-    addRecent(term);
+  const submit = (searchTerm) => {
+    setSearch(searchTerm);
+    addRecent(searchTerm);
   };
 
-  const selectSuggestion = (term, cat) => {
-    setSearch(term);
-    setCategory(cat);
-    addRecent(term);
+  const selectSuggestion = (searchTerm, category) => {
+    setSearch(searchTerm);
+    setCategory(category);
+    addRecent(searchTerm);
+    if (typeof window !== "undefined") {
+      localStorage.setItem(lastCategoryKey, category);
+      localStorage.setItem(searchTermKey, searchTerm);
+    }
   };
-
-  return { searchTerm, setSearch, results, submit, recent, suggestions, selectSuggestion, showSkeleton, filterActive };
+  return {
+    searchTerm,
+    setSearch,
+    results,
+    submit,
+    recent,
+    suggestions,
+    selectSuggestion,
+    showSkeleton,
+    filterActive
+  };
 }

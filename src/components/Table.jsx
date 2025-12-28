@@ -47,7 +47,7 @@ export default function Table() {
   const colWidth = `${100 / columnCount}%`;
 
   return (
-    <div className="overflow-x-auto mt-4 border border-base-300 rounded-md mb-6">
+    <div className="overflow-x-auto mt-6 border border-base-300 rounded-md mb-6">
       <table className="table table-fixed w-full border-collapse text-base">
         <thead className="bg-base-200">
           <tr>
