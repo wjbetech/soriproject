@@ -3,138 +3,161 @@
     "term": "개굴개굴 ㆍ 개꿀개꿀",
     "keywords": ["croak", "frog", "ribbit"],
     "animal": "Frog",
-    "description": "A frog croaking"
+    "description": "A frog croaking",
+    "english_example": ["Ribbit", "Croak"]
   },
   {
     "term": "멍멍",
     "keywords": ["bark", "dog", "woof"],
     "animal": "Dog",
-    "description": "A dog bark"
+    "description": "A dog bark",
+    "english_example": ["Woof", "Bark"]
   },
   {
     "term": "짹짹",
     "keywords": ["chirp", "bird", "tweet"],
     "animal": "Bird",
-    "description": "The sound of a bird chirping"
+    "description": "The sound of a bird chirping",
+    "english_example": ["Tweet", "Chirp"]
   },
   {
     "term": "꿀꿀",
     "keywords": ["oink", "pig", "snort"],
     "animal": "Pig",
-    "description": "An oink"
+    "description": "An oink",
+    "english_example": ["Oink", "Snort"]
   },
   {
     "term": "야옹야옹",
     "keywords": ["meow", "cat", "purr"],
     "animal": "Cat",
-    "description": "A cat meowing"
+    "description": "A cat meowing",
+    "english_example": ["Meow", "Purr"]
   },
   {
     "term": "꼬끼오",
     "keywords": ["cock-a-doodle-doo", "rooster"],
     "animal": "Rooster",
-    "description": "A rooster crowing"
+    "description": "A rooster crowing",
+    "english_example": ["Cock-a-doodle-doo", "Coo", "Caw"]
   },
   {
     "term": "음메",
     "keywords": ["moo", "cow"],
     "animal": "Cow",
-    "description": "A cow mooing"
+    "description": "A cow mooing",
+    "english_example": ["Moo"]
   },
   {
     "term": "부엉부엉",
     "keywords": ["hoot", "owl"],
     "animal": "Owl",
-    "description": "An owl hooting"
+    "description": "An owl hooting",
+    "english_example": ["Hoot"]
   },
   {
     "term": "구구",
     "keywords": ["coo", "pigeon", "dove"],
     "animal": "Pigeon",
-    "description": "A pigeon cooing"
+    "description": "A pigeon cooing",
+    "english_example": ["Coo"]
   },
   {
     "term": "찍찍",
     "keywords": ["squeak", "mouse", "rat"],
     "animal": "Mouse",
-    "description": "A mouse squeaking"
+    "description": "A mouse squeaking",
+    "english_example": ["Squeak"]
   },
   {
     "term": "까악까악",
     "keywords": ["caw", "crow", "raven"],
     "animal": "Crow",
-    "description": "A crow cawing"
+    "description": "A crow cawing",
+    "english_example": ["Caw"]
   },
   {
     "term": "끼륵끼륵",
     "keywords": ["squawk", "parrot", "Seagull", "bird"],
     "animal": "Parrot, Seagull",
-    "description": "A bird squawking"
+    "description": "A bird squawking",
+    "english_example": ["Squawk"]
   },
   {
     "term": "꽥꽥",
     "keywords": ["quack", "duck", "goose"],
     "animal": "Duck, Goose",
-    "description": "A duck or goose quacking"
+    "description": "A duck or goose quacking",
+    "english_example": ["Quack"]
   },
   {
     "term": "으르렁",
     "keywords": ["growl", "snarl", "bear", "wolf"],
     "animal": "Bear, Wolf",
-    "description": "A general growling sound made by animals"
+    "description": "A general growling sound made by animals",
+    "english_example": ["Growl", "Snarl"]
   },
   {
     "term": "짖짖",
     "keywords": ["bark", "small dog", "yip"],
     "animal": "Small Dog",
-    "description": "A high-pitched bark typical of small dogs"
+    "description": "A high-pitched bark typical of small dogs",
+    "english_example": ["Yip", "Yap"]
   },
   {
     "term": "삐약삐약",
-    "keywords": ["cheep", "chick", "peep"],
+    "keywords": ["cheep", "chick"],
     "animal": "Chick",
-    "description": "The sound of a baby chick cheeping"
+    "description": "The sound of a baby chick cheeping",
+    "english_example": ["Cheep"]
   },
   {
     "term": "매애",
     "keywords": ["bleat", "giraffe", "goat", "sheep"],
     "animal": "Generic Animal",
-    "description": "A generic term for animal sounds or cries"
+    "description": "A generic term for animal sounds or cries",
+    "english_example": ["Bleat", "B-a-a-a"]
   },
   {
     "term": "히힝",
     "keywords": ["neigh", "horse", "donkey", "whinny"],
     "animal": "Horse, Donkey",
-    "description": "A horse or donkey neighing"
+    "description": "A horse or donkey neighing",
+    "english_example": ["Neigh"]
   },
   {
     "term": "윙",
     "keywords": ["buzz", "bee", "insect", "mosquito"],
     "animal": "Insect",
-    "description": "The buzzing sound made by bees or insects"
+    "description": "The buzzing sound made by bees or insects",
+    "english_example": ["Buzz", "Bzzzz"]
   },
   {
     "term": "쉿쉿",
     "keywords": ["hiss", "snake", "cat"],
     "animal": "Snake, Cat",
-    "description": "The sound of hissing made by snakes or cats"
+    "description": "The sound of hissing made by snakes or cats",
+    "english_example": ["Hiss"]
   },
   {
     "term": "뻐국",
     "keywords": ["cuckoo", "bird"],
     "animal": "Cuckoo",
-    "description": "The sound of a cuckoo bird"
+    "description": "The sound of a cuckoo bird",
+    "english_example": ["Cuckoo"]
   },
   {
     "term": "캥캥",
     "keywords": ["kangaroo", "fox", "chortle"],
     "animal": "Kangaroo, Fox",
-    "description": "The sound of a kangaroo or fox chortling"
+    "description": "The sound of a kangaroo or fox chortling",
+    "english_example": ["Chortle"]
   },
   {
     "term": "끽끽",
     "keywords": ["monkey"],
     "animal": "Monkey",
-    "description": "The sound of a playful monkey"
+    "description": "The sound of a playful monkey",
+    "english_example": ["Howl", "Ook-ook"]
   }
 ]
