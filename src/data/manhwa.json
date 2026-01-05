@@ -2,246 +2,283 @@
   {
     "term": "끼익",
     "keywords": ["door", "creak"],
-    "description": "A door creak (classic comic creak)"
+    "description": "A door creak (classic comic creak)",
+    "english_example": ["Creak"]
   },
   {
     "term": "쿵",
     "keywords": ["thud", "impact"],
-    "description": "A heavy thud or impact"
+    "description": "A heavy thud or impact",
+    "english_example": ["Thud", "Bang"]
   },
   {
     "term": "휙",
     "keywords": ["whoosh", "swift"],
-    "description": "A whoosh or swift movement"
+    "description": "A whoosh or swift movement",
+    "english_example": ["Whoosh", "Swish"]
   },
   {
     "term": "타닥",
     "keywords": ["crackling", "crackle", "sharp"],
-    "description": "Light crackling or small sharp sound"
+    "description": "Light crackling or small sharp sound",
+    "english_example": ["Crackle", "Snap"]
   },
   {
     "term": "까꿍",
     "keywords": ["peekaboo", "surprise"],
-    "description": "Peekaboo sound (used in games or surprises)"
+    "description": "Peekaboo sound (used in games or surprises)",
+    "english_example": ["Peekaboo", "Boo"]
   },
   {
     "term": "꿀꺽",
     "keywords": ["gulp", "swallow"],
-    "description": "A gulping or swallowing sound"
-  },
-  {
-    "term": "끼익",
-    "keywords": ["door", "creak"],
-    "description": "A door creak (classic comic creak)"
+    "description": "A gulping or swallowing sound",
+    "english_example": ["Gulp", "Swallow"]
   },
   {
     "term": "톡",
     "keywords": ["tap", "hit", "bonk"],
-    "description": "A light tap, hit, or bonk sound"
+    "description": "A light tap, hit, or bonk sound",
+    "english_example": ["Tap", "Bonk"]
   },
   {
     "term": "퍽",
     "keywords": ["thump", "punch", "hit"],
-    "description": "A thump or punch sound"
+    "description": "A thump or punch sound",
+    "english_example": ["Thump", "Punch"]
   },
   {
     "term": "띠리리",
     "keywords": ["ringing", "phone", "bell"],
-    "description": "A ringing sound (like a phone or bell)"
+    "description": "A ringing sound (like a phone or bell)",
+    "english_example": ["Ring ring"]
   },
   {
     "term": "쌩",
     "keywords": ["zoom", "speed", "fast"],
-    "description": "A zooming or fast movement sound"
+    "description": "A zooming or fast movement sound",
+    "english_example": ["Zoom", "Whoosh"]
   },
   {
     "term": "얼쿡",
     "keywords": ["stare", "gaze", "look"],
-    "description": "A staring or intense gaze sound"
+    "description": "A staring or intense gaze sound",
+    "english_example": ["Stare", "Gaze"]
   },
   {
     "term": "뜨금",
     "keywords": ["shock", "flinch", "panic"],
-    "description": "A sound representing sudden realization or remembering something"
+    "description": "A sound representing sudden realization or remembering something",
+    "english_example": ["Gasp", "Flinch"]
   },
   {
     "term": "짝",
     "keywords": ["clap", "snap"],
-    "description": "Clapping or snapping sound"
+    "description": "Clapping or snapping sound",
+    "english_example": ["Clap", "Snap"]
   },
   {
     "term": "빤",
     "keywords": ["flash", "shine", "glare"],
-    "description": "An intense glare or stare or flash of light"
+    "description": "An intense glare or stare or flash of light",
+    "english_example": ["Flash", "Glare"]
   },
   {
     "term": "삐질",
     "keywords": ["pout", "sulk", "displeased"],
-    "description": "A sound representing pouting or sulking"
+    "description": "A sound representing pouting or sulking",
+    "english_example": ["Pout", "Hmph"]
   },
   {
     "term": "무셔",
     "keywords": ["scared", "frightened", "fear"],
-    "description": "A sound expressing fear or being scared"
+    "description": "A sound expressing fear or being scared",
+    "english_example": ["Flinch", "Gulp"]
   },
   {
     "term": "쭈굴",
     "keywords": ["shrink", "cower", "flinch"],
-    "description": "A sound representing shrinking back or cowering"
+    "description": "A sound representing shrinking back or cowering",
+    "english_example": ["Cower", "Eek", "Oop"]
   },
   {
     "term": "확 ㆍ 화악",
     "keywords": ["gulp", "choke", "swallow"],
-    "description": "A gulping or choking sound"
+    "description": "A gulping or choking sound",
+    "english_example": ["Gulp", "Choke"]
   },
   {
     "term": "탁",
     "keywords": ["slam", "bang", "hit"],
-    "description": "A slamming or banging sound"
+    "description": "A slamming or banging sound",
+    "english_example": ["Slam", "Bang", "Thud"]
   },
   {
     "term": "벌떡",
     "keywords": ["sudden", "jump", "rise", "snap"],
-    "description": "A sound representing sudden movement, jumping up, or snapping to attention"
+    "description": "A sound representing sudden movement, jumping up, or snapping to attention",
+    "english_example": ["Jump", "Snap", "Spring"]
   },
   {
     "term": "흔들",
     "keywords": ["shake", "rattle", "wobble"],
-    "description": "A shaking or rattling sound"
+    "description": "A shaking or rattling sound",
+    "english_example": ["Shake", "Rattle"]
   },
   {
     "term": "번쩍",
     "keywords": ["flash", "sparkle", "shine"],
-    "description": "A flashing or sparkling sound"
+    "description": "A flashing or sparkling sound",
+    "english_example": ["Flash", "Sparkle", "Twinkle"]
   },
   {
     "term": "움찔",
     "keywords": ["flinch", "twitch", "startle"],
-    "description": "A flinching or twitching sound"
+    "description": "A flinching or twitching sound",
+    "english_example": ["Flinch", "Twitch"]
   },
   {
     "term": "꾸벅",
     "keywords": ["nod", "bow", "sleepy"],
-    "description": "A nodding or bowing sound (often indicating sleepiness)"
+    "description": "A nodding or bowing sound (often indicating sleepiness)",
+    "english_example": ["Nod", "Bow"]
   },
   {
     "term": "콰직",
     "keywords": ["crash", "smash", "break"],
-    "description": "A crashing or smashing sound"
+    "description": "A crashing or smashing sound",
+    "english_example": ["Crash", "Smash"]
   },
   {
     "term": "챙",
     "keywords": ["clang", "clank"],
-    "description": "A clanging or clanking sound"
+    "description": "A clanging or clanking sound",
+    "english_example": ["Clang", "Clank"]
   },
   {
     "term": "팟",
     "keywords": ["pop", "burst", "stab"],
-    "description": "A popping or bursting sound, or a stabbing sound"
+    "description": "A popping or bursting sound, or a stabbing sound",
+    "english_example": ["Pop", "Burst", "Stab"]
   },
   {
     "term": "촤악",
     "keywords": ["swoosh", "swish", "sword"],
-    "description": "The swooshing or swishing sound of a sword"
+    "description": "The swooshing or swishing sound of a sword",
+    "english_example": ["Swoosh", "Swish"]
   },
   {
     "term": "크윽",
     "keywords": ["groan", "grunt", "pain"],
-    "description": "A groaning or grunting sound (often indicating pain or effort)"
+    "description": "A groaning or grunting sound (often indicating pain or effort)",
+    "english_example": ["Groan", "Grunt"]
   },
   {
     "term": "털썩",
     "keywords": ["splat", "plop", "fall"],
-    "description": "A splat or plop sound"
+    "description": "A splat or plop sound",
+    "english_example": ["Splat", "Plop"]
   },
   {
     "term": "쑤욱",
     "keywords": ["pop", "pick", "pull"],
-    "description": "A popping or pulling sound"
+    "description": "A popping or pulling sound",
+    "english_example": ["Pop", "Pull"]
   },
   {
     "term": "지잉",
     "keywords": ["buzz", "humming", "vibrating", "electric door"],
-    "description": "A buzzing or humming sound (like an electric door)"
+    "description": "A buzzing or humming sound (like an electric door)",
+    "english_example": ["Buzz", "Hum", "Skkrrr"]
   },
   {
     "term": "우뚝",
     "keywords": ["stand", "rise", "erect"],
-    "description": "A sound representing standing tall or rising tall"
+    "description": "A sound representing standing tall or rising tall",
+    "english_example": ["Rising"]
   },
   {
     "term": "긁적",
     "keywords": ["scratch", "scrape", "itch"],
-    "description": "A scratching or scraping sound"
+    "description": "A scratching or scraping sound",
+    "english_example": ["Scratch", "Scrape"]
   },
   {
     "term": "찌릿",
     "keywords": ["zap", "tingle", "shock"],
-    "description": "A zapping or tingling sound"
+    "description": "A zapping or tingling sound",
+    "english_example": ["Zap", "Tingle", "Bzz"]
   },
   {
     "term": "킁",
     "keywords": ["sniff", "snuffle", "smell"],
-    "description": "A sniffing or snuffling sound"
+    "description": "A sniffing or snuffling sound",
+    "english_example": ["Sniff", "Sniffle"]
   },
   {
     "term": "척",
     "keywords": ["put", "place"],
-    "description": "A sound for placing something out"
+    "description": "A sound for placing something out",
+    "english_example": ["Plop", "Da-dah"]
   },
   {
     "term": "삑",
     "keywords": ["beep", "honk", "squeak"],
-    "description": "A beeping or honking sound"
+    "description": "A beeping or honking sound",
+    "english_example": ["Beep", "Honk"]
   },
   {
     "term": "꺄",
     "keywords": ["scream", "yell", "shriek"],
-    "description": "A high-pitched 'eee!' type scream or yell"
+    "description": "A high-pitched 'eee!' type scream or yell",
+    "english_example": ["Eek!", "Aaaah!"]
   },
   {
     "term": "지끈",
     "keywords": ["throb", "ache", "pain"],
-    "description": "A throbbing or aching sound (often indicating pain)"
+    "description": "A throbbing or aching sound (often indicating pain)",
+    "english_example": ["Throb", "Ache"]
   },
   {
     "term": "절레절레",
     "keywords": ["shake", "head", "no"],
-    "description": "The sound of shaking one's head (indicating 'no')"
+    "description": "The sound of shaking one's head (indicating 'no')",
+    "english_example": ["Shake-shake", "Shaking"]
   },
   {
     "term": "저벅저벅",
     "keywords": ["footsteps", "walking", "marching"],
-    "description": "The sound of footsteps while walking or marching"
+    "description": "The sound of footsteps while walking or marching",
+    "english_example": ["Clomp-clomp", "Marching"]
   },
   {
     "term": "뚜벅뚜벅",
     "keywords": ["footsteps", "walking", "steady"],
-    "description": "The sound of steady footsteps while walking"
-  },
-  {
-    "term": "띠리릭",
-    "keywords": ["ringing", "phone", "bell"],
-    "description": "A ringing sound (like a phone or bell)"
+    "description": "The sound of steady footsteps while walking",
+    "english_example": ["Pad-pad", "Thud-thud"]
   },
   {
     "term": "멈칫",
     "keywords": ["pause", "halt", "stop"],
-    "description": "A sound representing a sudden pause or halt"
+    "description": "A sound representing a sudden pause or halt",
+    "english_example": ["Flinch"]
   },
   {
     "term": "띠링",
     "keywords": ["ding", "bell", "chime"],
-    "description": "A dinging sound (like a bell or chime)"
+    "description": "A dinging sound (like a bell or chime)",
+    "english_example": ["Ding", "Chime", "Ring"]
   },
   {
     "term": "빼꼼",
     "keywords": ["peek", "peep", "look"],
-    "description": "A sound representing a quick peek or peep"
+    "description": "A sound representing a quick peek or peep",
+    "english_example": ["Peek", "Peep"]
   },
   {
     "term": "불쑥",
     "keywords": ["sudden", "pop", "appear"],
-    "description": "A sound representing sudden appearance or popping out"
+    "description": "A sound representing sudden appearance or popping out",
+    "english_example": ["Pop", "Sudden"]
   }
 ]

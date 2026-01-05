@@ -2,226 +2,271 @@
   {
     "term": "보글보글",
     "keywords": ["bubble", "boil", "bubbles"],
-    "description": "Bubbling/boiling (sound of water or soup)"
+    "description": "Bubbling/boiling (sound of water or soup)",
+    "english_example": ["Bubble", "Boil"]
   },
   {
     "term": "살랑살랑",
     "keywords": ["flutters", "breeze", "fabric"],
-    "description": "Light fluttering (breeze, fabric)"
+    "description": "Light fluttering (breeze, fabric)",
+    "english_example": ["Flutter", "Sway"]
   },
   {
     "term": "데굴데굴",
     "keywords": ["roll", "tumble", "repeat"],
-    "description": "Rolling or tumbling repeatedly"
+    "description": "Rolling or tumbling repeatedly",
+    "english_example": ["Roll", "Tumble"]
   },
   {
     "term": "쨍그랑",
     "keywords": ["clink", "clang"],
-    "description": "Clinking or clanging sound (glass or metal)"
+    "description": "Clinking or clanging sound (glass or metal)",
+    "english_example": ["Clink", "Clang"]
   },
   {
     "term": "우르르",
     "keywords": ["thunder", "rumble", "crash"],
-    "description": "Thunderous rumble or crash"
+    "description": "Thunderous rumble or crash",
+    "english_example": ["Rumble", "Crash", "Boom"]
   },
   {
     "term": "반짝반짝",
     "keywords": ["twinkle", "sparkle", "shine"],
-    "description": "Twinkling or sparkling light"
+    "description": "Twinkling or sparkling light",
+    "english_example": ["Twinkle", "Sparkle"]
   },
   {
     "term": "꾸르륵",
     "keywords": ["growl", "stomach", "rumble"],
-    "description": "Stomach growling or rumbling"
+    "description": "Stomach growling or rumbling",
+    "english_example": ["Growl", "Rumble"]
   },
   {
     "term": "끙끙",
     "keywords": ["groan", "struggle", "effort"],
-    "description": "Groaning or struggling sound (effort)"
+    "description": "Groaning or struggling sound (effort)",
+    "english_example": ["Groan", "Ugh"]
   },
   {
     "term": "덜컬덜컹",
     "keywords": ["rattle", "bump"],
-    "description": "Rattling or bumpy movement sound"
+    "description": "Rattling or bumpy movement sound",
+    "english_example": ["Rattle", "Bump", "Du-dun Du-dun"]
   },
   {
     "term": "둥둥",
     "keywords": ["bang", "drum"],
-    "description": "The sound of banging a drum or knocking on a door"
+    "description": "The sound of banging a drum or knocking on a door",
+    "english_example": ["Bang", "Bong"]
   },
   {
     "term": "드르렁",
     "keywords": ["snore", "sleep"],
-    "description": "Snoring sound while sleeping"
+    "description": "Snoring sound while sleeping",
+    "english_example": ["Snore", "Zzz"]
   },
   {
     "term": "딩굴딩굴",
     "keywords": ["roll", "tumble"],
-    "description": "Rolling or tumbling sound"
+    "description": "Rolling or tumbling sound",
+    "english_example": ["Roll", "Tumble"]
   },
   {
     "term": "따르릉",
     "keywords": ["ring", "phone", "bell"],
-    "description": "Ringing sound (phone or bell)"
+    "description": "Ringing sound (phone or bell)",
+    "english_example": ["Ring", "Ding-dong"]
   },
   {
     "term": "팔랑팔랑",
     "keywords": ["flutter", "flap"],
-    "description": "Fluttering or flapping sound"
+    "description": "Fluttering or flapping sound",
+    "english_example": ["Flutter", "Flap"]
   },
   {
     "term": "딸꾹딸꾹",
     "keywords": ["hiccup"],
-    "description": "Hiccup sound"
+    "description": "Hiccup sound",
+    "english_example": ["Hiccup"]
   },
   {
     "term": "똑딱똑딱",
     "keywords": ["tick", "tock", "clock"],
-    "description": "Ticking sound of a clock"
+    "description": "Ticking sound of a clock",
+    "english_example": ["Tick-tock"]
   },
   {
     "term": "부릉부릉",
     "keywords": ["engine", "car"],
-    "description": "Engine revving sound (car or motorcycle)"
+    "description": "Engine revving sound (car or motorcycle)",
+    "english_example": ["Brum"]
   },
   {
     "term": "빵빵",
     "keywords": ["honk", "horn"],
-    "description": "Honk of a car horn"
+    "description": "Honk of a car horn",
+    "english_example": ["Honk", "Beep-beep"]
   },
   {
     "term": "칙칙폭폭",
     "keywords": ["choo-choo", "train"],
-    "description": "Choo-choo sound of a train"
+    "description": "Choo-choo sound of a train",
+    "english_example": ["Choo-choo", "Chug-a chug-a"]
   },
   {
     "term": "싹뚝싹뚝",
     "keywords": ["snip", "cut"],
-    "description": "Snipping or cutting sound (scissors)"
+    "description": "Snipping or cutting sound (scissors)",
+    "english_example": ["Snip"]
   },
   {
     "term": "쑥덕쑥덕",
     "keywords": ["whisper", "gossip"],
-    "description": "Whispering or gossiping sound"
+    "description": "Whispering or gossiping sound",
+    "english_example": ["Psst", "Pst pst"]
   },
   {
     "term": "아장아장",
     "keywords": ["toddle", "walk"],
-    "description": "Toddling or walking sound (baby)"
+    "description": "Toddling or walking sound (baby)",
+    "english_example": ["Toddle"]
   },
   {
     "term": "어기여차",
     "keywords": ["heave-ho", "effort"],
-    "description": "Heave-ho or the sound of heavy effort, e.g. weightlifting"
+    "description": "Heave-ho or the sound of heavy effort, e.g. weightlifting",
+    "english_example": ["Heave-ho", "Huff"]
   },
   {
     "term": "에취",
     "keywords": ["sneeze"],
-    "description": "Sneeze sound"
+    "description": "Sneeze sound",
+    "english_example": ["Achoo"]
   },
   {
     "term": "으쓱으쓱",
     "keywords": ["shrug", "gesture"],
-    "description": "Shrugging or gesturing sound"
+    "description": "Shrugging or gesturing sound",
+    "english_example": ["Shrug"]
   },
   {
     "term": "재잘재잘",
     "keywords": ["chatter", "babble"],
-    "description": "Chattering or babbling sound"
+    "description": "Chattering or babbling sound",
+    "english_example": ["Chitter chatter", "Babble"]
   },
   {
     "term": "쟁강쟁강",
     "keywords": ["metal", "clang"],
-    "description": "The sound of metal clanging against metal"
+    "description": "The sound of metal clanging against metal",
+    "english_example": ["Clang"]
   },
   {
     "term": "조잘조잘",
     "keywords": ["murmur", "talk"],
-    "description": "Murmuring or talking sound"
+    "description": "Murmuring or talking sound",
+    "english_example": ["Murmur", "Chitter chatter"]
   },
   {
     "term": "지글지글",
     "keywords": ["sizzle", "fry"],
-    "description": "Sizzling sound (frying food)"
+    "description": "Sizzling sound (frying food)",
+    "english_example": ["Sizzle"]
   },
   {
     "term": "땡땡",
     "keywords": ["ding-dong", "bell"],
-    "description": "Ding-dong sound of a bell"
+    "description": "Ding-dong sound of a bell",
+    "english_example": ["Ding-dong"]
   },
   {
     "term": "찔끔찔끔",
     "keywords": ["drip", "leak"],
-    "description": "Dripping or leaking sound"
+    "description": "Dripping or leaking sound",
+    "english_example": ["Drip", "Drip-drop"]
   },
   {
     "term": "와삭와삭",
     "keywords": ["crunch", "munch"],
-    "description": "Crunching or munching sound"
+    "description": "Crunching or munching sound",
+    "english_example": ["Crunch", "Munch"]
   },
   {
     "term": "찰칵",
     "keywords": ["click", "camera"],
-    "description": "Click sound of a camera shutter"
+    "description": "Click sound of a camera shutter",
+    "english_example": ["Click"]
   },
   {
     "term": "철철",
     "keywords": ["pour", "flow"],
-    "description": "Pouring or flowing sound (liquid)"
+    "description": "Pouring or flowing sound (liquid)",
+    "english_example": ["Glug glug", "Woosh"]
   },
   {
     "term": "콜록콜록",
     "keywords": ["cough"],
-    "description": "Coughing sound"
+    "description": "Coughing sound",
+    "english_example": ["Cough"]
   },
   {
     "term": "콩닥콩닥",
     "keywords": ["heartbeat", "nervous"],
-    "description": "Heartbeat sound (nervous or excited)"
+    "description": "Heartbeat sound (nervous or excited)",
+    "english_example": ["Thump-thump", "Bu-bum"]
   },
   {
     "term": "콸콸",
     "keywords": ["gush", "flow"],
-    "description": "Gushing or flowing sound (liquid)"
+    "description": "Gushing or flowing sound (liquid)",
+    "english_example": ["Whoosh"]
   },
   {
     "term": "쿨쿨",
     "keywords": ["snore", "sleep"],
-    "description": "Soft snoring sound while sleeping"
+    "description": "Soft snoring sound while sleeping",
+    "english_example": ["Snore", "Zzz"]
   },
   {
     "term": "통통",
     "keywords": ["thump", "bounce"],
-    "description": "Thumping or bouncing sound"
+    "description": "Thumping or bouncing sound",
+    "english_example": ["Thump", "Boing"]
   },
   {
     "term": "퍼덕퍼덕",
     "keywords": ["flap", "flutter"],
-    "description": "Flapping or fluttering sound (wings)"
+    "description": "Flapping or fluttering sound (wings)",
+    "english_example": ["Flap", "Flutter"]
   },
   {
     "term": "찰싹찰싹",
     "keywords": ["splash", "slap"],
-    "description": "Splashing or slapping sound"
+    "description": "Splashing or slapping sound",
+    "english_example": ["Splash", "Slap"]
   },
   {
     "term": "펑",
     "keywords": ["pop", "bang"],
-    "description": "Popping or banging sound"
+    "description": "Popping or banging sound",
+    "english_example": ["Pop", "Bang"]
   },
   {
     "term": "피융",
     "keywords": ["whoosh", "zoom", "whizz"],
-    "description": "A whizz or zooming sound"
+    "description": "A whizz or zooming sound",
+    "english_example": ["Whoosh", "Zoom", "Whizz"]
   },
   {
     "term": "후루룩",
     "keywords": ["slurp", "sip"],
-    "description": "Slurping or sipping sound"
+    "description": "Slurping or sipping sound",
+    "english_example": ["Slurp", "Sip"]
   },
   {
     "term": "휙",
     "keywords": ["whoosh", "fast", "swift"],
-    "description": "A fast, whooshing type movement"
+    "description": "A fast, whooshing type movement",
+    "english_example": ["Whoosh", "Swish"]
   }
 ]
