@@ -19,7 +19,10 @@ const allWordsInitial = Object.values(wordsByCategoryInitial).flat();
 
 const initialSearch = typeof window !== "undefined" ? localStorage.getItem(searchTermKey) || "" : "";
 
-const initialCategory = typeof window !== "undefined" ? localStorage.getItem(categoryKey) || "All" : "All";
+const initialCategory = typeof window !== "undefined" ? localStorage.getItem(categoryKey) || "General" : "General";
+
+const initialWords =
+  initialCategory === "All" ? allWordsInitial : wordsByCategoryInitial[initialCategory] || allWordsInitial;
 
 const useAppStore = create(
   persist(
@@ -28,7 +31,7 @@ const useAppStore = create(
       searchTerm: initialSearch,
       category: initialCategory,
       wordsByCategory: wordsByCategoryInitial,
-      words: allWordsInitial,
+      words: initialWords,
       recent: [],
       theme: typeof window !== "undefined" ? localStorage.getItem(themeKey) || "light" : "light",
 
